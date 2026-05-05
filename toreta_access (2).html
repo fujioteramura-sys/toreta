@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>アクセス｜toreta整体院 富士見台本院</title>
+<meta name="description" content="toreta整体院富士見台本院へのアクセス。西武池袋線・富士見台駅徒歩1分。東京都練馬区貫井3-1-11 1F。TEL 03-5848-8252。平日21時まで受付・年中無休。">
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;600&family=Noto+Sans+JP:wght@300;400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --green: #3d6b4f; --green-light: #5a8c6a; --green-pale: #eef4f0;
+    --sand: #f5f0e8; --sand-dark: #e8dfc8; --text: #2a2a2a; --text-light: #5a5a5a; --white: #fdfcfa;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Noto Sans JP', sans-serif; background: var(--white); color: var(--text); overflow-x: hidden; }
+
+  header { position: fixed; top: 0; left: 0; right: 0; z-index: 100; display: flex; justify-content: space-between; align-items: center; padding: 18px 40px; background: rgba(253,252,250,0.95); backdrop-filter: blur(8px); border-bottom: 1px solid rgba(61,107,79,0.12); }
+  .logo { font-family: 'Shippori Mincho', serif; font-size: 1.2rem; color: var(--green); letter-spacing: 0.08em; text-decoration: none; line-height: 1.4; }
+  .logo span { display: block; font-size: 0.65rem; color: var(--text-light); letter-spacing: 0.15em; font-family: 'Noto Sans JP', sans-serif; font-weight: 300; }
+  nav { display: flex; gap: 28px; align-items: center; }
+  nav a { font-size: 0.78rem; color: var(--text-light); text-decoration: none; letter-spacing: 0.1em; transition: color 0.2s; }
+  nav a:hover { color: var(--green); }
+  .nav-cta { background: var(--green); color: white !important; padding: 10px 22px; border-radius: 2px; }
+
+  .page-hero { padding-top: 70px; background: var(--sand); }
+  .page-hero-inner { padding: 60px 80px; }
+  .page-label { font-size: 0.7rem; letter-spacing: 0.3em; color: var(--green); margin-bottom: 16px; display: flex; align-items: center; gap: 12px; }
+  .page-label::after { content: ''; flex: 1; max-width: 60px; height: 1px; background: var(--green); }
+  .page-title { font-family: 'Shippori Mincho', serif; font-size: clamp(1.8rem, 3vw, 2.8rem); line-height: 1.5; margin-bottom: 16px; }
+  .page-desc { font-size: 0.88rem; color: var(--text-light); line-height: 2; }
+
+  .breadcrumb { background: var(--sand-dark); padding: 12px 80px; font-size: 0.72rem; color: var(--text-light); display: flex; gap: 8px; }
+  .breadcrumb a { color: var(--green); text-decoration: none; }
+
+  main { max-width: 1100px; margin: 0 auto; padding: 80px 80px; }
+
+  .section-label { font-size: 0.7rem; letter-spacing: 0.3em; color: var(--green); margin-bottom: 16px; display: flex; align-items: center; gap: 12px; }
+  .section-label::after { content: ''; flex: 1; max-width: 60px; height: 1px; background: var(--green); }
+  .section-title { font-family: 'Shippori Mincho', serif; font-size: 1.6rem; margin-bottom: 40px; }
+
+  /* 院情報 */
+  .clinic-section { margin-bottom: 80px; }
+  .clinic-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-bottom: 40px; }
+
+  .clinic-card { background: var(--sand); border-radius: 8px; padding: 40px; }
+  .clinic-card.main { background: var(--green); color: white; }
+  .clinic-name { font-family: 'Shippori Mincho', serif; font-size: 1.3rem; margin-bottom: 6px; }
+  .clinic-card.main .clinic-name { color: white; }
+  .clinic-station { font-size: 0.8rem; color: var(--green); margin-bottom: 20px; font-weight: 400; }
+  .clinic-card.main .clinic-station { color: rgba(255,255,255,0.75); }
+  .clinic-info-row { display: flex; gap: 12px; margin-bottom: 12px; font-size: 0.85rem; }
+  .clinic-info-label { font-size: 0.72rem; color: var(--text-light); width: 72px; flex-shrink: 0; padding-top: 2px; letter-spacing: 0.05em; }
+  .clinic-card.main .clinic-info-label { color: rgba(255,255,255,0.6); }
+  .clinic-info-value { color: var(--text); line-height: 1.7; }
+  .clinic-card.main .clinic-info-value { color: white; }
+  .clinic-tel { font-family: 'Shippori Mincho', serif; font-size: 1.6rem; color: var(--green); margin: 20px 0 8px; }
+  .clinic-card.main .clinic-tel { color: white; }
+  .clinic-btn { display: inline-block; background: var(--green); color: white; padding: 12px 24px; text-decoration: none; border-radius: 2px; font-size: 0.82rem; letter-spacing: 0.08em; margin-top: 16px; transition: background 0.2s; }
+  .clinic-btn:hover { background: var(--green-light); }
+  .clinic-card.main .clinic-btn { background: rgba(255,255,255,0.2); border: 1px solid rgba(255,255,255,0.4); }
+  .clinic-card.main .clinic-btn:hover { background: rgba(255,255,255,0.3); }
+
+  /* 地図 */
+  .map-section { margin-bottom: 80px; }
+  .map-wrap { border-radius: 8px; overflow: hidden; margin-bottom: 20px; }
+  .map-wrap iframe { width: 100%; height: 400px; border: none; display: block; }
+  .map-note { font-size: 0.8rem; color: var(--text-light); text-align: center; }
+
+  /* アクセス方法 */
+  .access-ways { background: var(--green-pale); border-radius: 8px; padding: 40px; margin-bottom: 80px; }
+  .access-ways-title { font-family: 'Shippori Mincho', serif; font-size: 1.2rem; margin-bottom: 24px; }
+  .access-way-list { display: flex; flex-direction: column; gap: 16px; }
+  .access-way { display: flex; gap: 16px; align-items: flex-start; }
+  .access-way-icon { width: 36px; height: 36px; background: var(--green); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 1rem; flex-shrink: 0; }
+  .access-way-text { font-size: 0.87rem; color: var(--text); line-height: 1.8; padding-top: 6px; }
+  .access-way-text strong { color: var(--green); }
+
+  /* CTA */
+  .cta-section { background: var(--text); border-radius: 8px; padding: 56px 60px; display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+  .cta-title { font-family: 'Shippori Mincho', serif; font-size: 1.6rem; color: white; line-height: 1.6; margin-bottom: 12px; }
+  .cta-sub { font-size: 0.83rem; color: rgba(255,255,255,0.6); line-height: 2; }
+  .cta-right { display: flex; flex-direction: column; gap: 14px; }
+  .cta-tel { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12); border-radius: 4px; padding: 24px 28px; }
+  .cta-tel-label { font-size: 0.7rem; color: rgba(255,255,255,0.5); letter-spacing: 0.2em; margin-bottom: 6px; }
+  .cta-tel-num { font-family: 'Shippori Mincho', serif; font-size: 1.8rem; color: white; }
+  .cta-tel-hours { font-size: 0.72rem; color: rgba(255,255,255,0.4); margin-top: 6px; }
+  .cta-btn { background: var(--green); color: white; text-align: center; padding: 18px; text-decoration: none; border-radius: 4px; font-size: 0.88rem; letter-spacing: 0.1em; display: block; }
+  .cta-btn:hover { background: var(--green-light); }
+
+  footer { background: #1a1a1a; padding: 40px 80px; display: flex; justify-content: space-between; align-items: center; margin-top: 80px; }
+  .footer-logo { font-family: 'Shippori Mincho', serif; font-size: 1.1rem; color: rgba(255,255,255,0.4); line-height: 1.4; }
+  .footer-logo span { display: block; font-size: 0.6rem; color: rgba(255,255,255,0.25); letter-spacing: 0.15em; font-family: 'Noto Sans JP', sans-serif; }
+  .footer-copy { font-size: 0.72rem; color: rgba(255,255,255,0.25); }
+
+  @media (max-width: 900px) {
+    header { padding: 16px 24px; } nav { display: none; }
+    .page-hero-inner { padding: 40px 32px; }
+    .breadcrumb { padding: 12px 32px; }
+    main { padding: 48px 32px; }
+    .clinic-grid { grid-template-columns: 1fr; }
+    .map-wrap iframe { height: 280px; }
+    .cta-section { grid-template-columns: 1fr; padding: 36px 28px; gap: 32px; }
+    footer { flex-direction: column; gap: 12px; padding: 32px; text-align: center; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <a href="index.html" class="logo">toreta整体院<span>富士見台本院</span></a>
+  <nav>
+    <a href="index.html">HOME</a>
+    <a href="toreta_plan.html">料金</a>
+    <a href="toreta_member.html">スタッフ</a>
+    <a href="toreta_faq.html">よくある質問</a>
+    <a href="tel:0358488252" class="nav-cta">📞 予約・お問い合わせ</a>
+  </nav>
+</header>
+
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <div class="page-label">ACCESS</div>
+    <h1 class="page-title">アクセス</h1>
+    <p class="page-desc">富士見台駅・都立家政駅からそれぞれ徒歩1分。<br>お仕事帰りにも通いやすい立地です。</p>
+  </div>
+</div>
+
+<div class="breadcrumb">
+  <a href="index.html">HOME</a><span>›</span><span>アクセス</span>
+</div>
+
+<main>
+
+  <!-- 院情報 -->
+  <section class="clinic-section">
+    <div class="section-label">CLINIC INFO</div>
+    <h2 class="section-title">院情報・営業時間</h2>
+
+    <div class="clinic-grid">
+      <!-- 富士見台本院 -->
+      <div class="clinic-card main">
+        <div class="clinic-name">toreta整体院 富士見台本院</div>
+        <div class="clinic-station">🚃 西武池袋線「富士見台」駅 徒歩1分</div>
+        <div class="clinic-info-row">
+          <div class="clinic-info-label">住所</div>
+          <div class="clinic-info-value">東京都練馬区貫井3-1-11 1F</div>
+        </div>
+        <div class="clinic-info-row">
+          <div class="clinic-info-label">平日</div>
+          <div class="clinic-info-value">10:00〜21:00（最終受付）</div>
+        </div>
+        <div class="clinic-info-row">
+          <div class="clinic-info-label">土・日</div>
+          <div class="clinic-info-value">10:00〜18:00（最終受付）</div>
+        </div>
+        <div class="clinic-info-row">
+          <div class="clinic-info-label">定休日</div>
+          <div class="clinic-info-value">年中無休（年末年始除く）</div>
+        </div>
+        <div class="clinic-tel">03-5848-8252</div>
+        <a href="tel:0358488252" class="clinic-btn">📞 電話で予約する</a>
+      </div>
+
+      <!-- 都立家政院 -->
+      <div class="clinic-card">
+        <div class="clinic-name">整骨院toreta 都立家政院</div>
+        <div class="clinic-station" style="color:var(--green);">🚃 西武新宿線「都立家政」駅 徒歩1分</div>
+        <div class="clinic-info-row">
+          <div class="clinic-info-label">住所</div>
+          <div class="clinic-info-value">東京都中野区若宮3-22-1<br>HANAYAビル1階</div>
+        </div>
+        <div class="clinic-info-row">
+          <div class="clinic-info-label">平日</div>
+          <div class="clinic-info-value">10:00〜21:00（最終受付）</div>
+        </div>
+        <div class="clinic-info-row">
+          <div class="clinic-info-label">土・日</div>
+          <div class="clinic-info-value">10:00〜18:00（最終受付）</div>
+        </div>
+        <div class="clinic-info-row">
+          <div class="clinic-info-label">定休日</div>
+          <div class="clinic-info-value">金曜・祝日定休</div>
+        </div>
+        <div class="clinic-tel" style="color:var(--green);">03-3337-1722</div>
+        <a href="https://toreta-yugami.jp" target="_blank" class="clinic-btn">都立家政院のサイトへ →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 地図 -->
+  <section class="map-section">
+    <div class="section-label">MAP</div>
+    <h2 class="section-title">富士見台本院 地図</h2>
+    <div class="map-wrap">
+      <iframe src="https://maps.google.com/maps?q=東京都練馬区貫井3-1-11&output=embed&hl=ja&z=17" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <p class="map-note">東京都練馬区貫井3-1-11 1F（富士見台駅改札出口よりすぐ）</p>
+  </section>
+
+  <!-- アクセス方法 -->
+  <section>
+    <div class="access-ways">
+      <div class="access-ways-title">🗺️ アクセス方法</div>
+      <div class="access-way-list">
+        <div class="access-way">
+          <div class="access-way-icon">🚃</div>
+          <div class="access-way-text"><strong>電車でお越しの方：</strong>西武池袋線「富士見台」駅 改札出口よりすぐ徒歩1分。「中村橋」駅からも徒歩8分でお越しいただけます。</div>
+        </div>
+        <div class="access-way">
+          <div class="access-way-icon">🚌</div>
+          <div class="access-way-text"><strong>バスでお越しの方：</strong>富士見台駅バス停をご利用ください。</div>
+        </div>
+        <div class="access-way">
+          <div class="access-way-icon">🚗</div>
+          <div class="access-way-text"><strong>お車でお越しの方：</strong>近隣のコインパーキングをご利用ください。ご来院前にお電話いただければ、近くの駐車場をご案内いたします。</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div>
+      <h2 class="cta-title">ご来院前に<br>お気軽にご連絡ください。</h2>
+      <p class="cta-sub">道順のご案内や当日の混雑状況など、<br>お電話でお答えします。</p>
+    </div>
+    <div class="cta-right">
+      <div class="cta-tel">
+        <div class="cta-tel-label">TEL</div>
+        <div class="cta-tel-num">03-5848-8252</div>
+        <div class="cta-tel-hours">月〜金 10:00〜21:00　／　土・日 10:00〜18:00<br>年中無休（年末年始除く）</div>
+      </div>
+      <a href="https://itami-toreta.jp/contact.html" class="cta-btn">メールでのお問い合わせ・ご予約</a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="footer-logo">toreta整体院<span>富士見台本院</span></div>
+  <p class="footer-copy">© toreta整体院 富士見台本院</p>
+</footer>
+
+</body>
+</html>

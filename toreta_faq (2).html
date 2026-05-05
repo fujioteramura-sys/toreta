@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>よくある質問｜toreta整体院 富士見台本院</title>
+<meta name="description" content="toreta整体院富士見台本院のよくある質問。施術方法・料金・保険・服装・予約方法など初めての方が気になる疑問にお答えします。練馬区富士見台駅徒歩1分。">
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;600&family=Noto+Sans+JP:wght@300;400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --green: #3d6b4f; --green-light: #5a8c6a; --green-pale: #eef4f0;
+    --sand: #f5f0e8; --sand-dark: #e8dfc8; --text: #2a2a2a; --text-light: #5a5a5a; --white: #fdfcfa;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Noto Sans JP', sans-serif; background: var(--white); color: var(--text); overflow-x: hidden; }
+
+  header { position: fixed; top: 0; left: 0; right: 0; z-index: 100; display: flex; justify-content: space-between; align-items: center; padding: 18px 40px; background: rgba(253,252,250,0.95); backdrop-filter: blur(8px); border-bottom: 1px solid rgba(61,107,79,0.12); }
+  .logo { font-family: 'Shippori Mincho', serif; font-size: 1.2rem; color: var(--green); letter-spacing: 0.08em; text-decoration: none; line-height: 1.4; }
+  .logo span { display: block; font-size: 0.65rem; color: var(--text-light); letter-spacing: 0.15em; font-family: 'Noto Sans JP', sans-serif; font-weight: 300; }
+  nav { display: flex; gap: 28px; align-items: center; }
+  nav a { font-size: 0.78rem; color: var(--text-light); text-decoration: none; letter-spacing: 0.1em; transition: color 0.2s; }
+  nav a:hover { color: var(--green); }
+  .nav-cta { background: var(--green); color: white !important; padding: 10px 22px; border-radius: 2px; }
+
+  .page-hero { padding-top: 70px; background: var(--sand); }
+  .page-hero-inner { padding: 60px 80px 60px; }
+  .page-label { font-size: 0.7rem; letter-spacing: 0.3em; color: var(--green); margin-bottom: 16px; display: flex; align-items: center; gap: 12px; }
+  .page-label::after { content: ''; flex: 1; max-width: 60px; height: 1px; background: var(--green); }
+  .page-title { font-family: 'Shippori Mincho', serif; font-size: clamp(1.8rem, 3vw, 2.8rem); line-height: 1.5; margin-bottom: 16px; }
+  .page-desc { font-size: 0.88rem; color: var(--text-light); line-height: 2; }
+
+  .breadcrumb { background: var(--sand-dark); padding: 12px 80px; font-size: 0.72rem; color: var(--text-light); display: flex; gap: 8px; }
+  .breadcrumb a { color: var(--green); text-decoration: none; }
+
+  main { max-width: 860px; margin: 0 auto; padding: 80px 80px; }
+
+  .faq-category { margin-bottom: 64px; }
+  .faq-category-title { font-family: 'Shippori Mincho', serif; font-size: 1.2rem; color: var(--green); margin-bottom: 24px; padding-bottom: 12px; border-bottom: 2px solid var(--green-pale); display: flex; align-items: center; gap: 10px; }
+
+  .faq-item { border-bottom: 1px solid var(--sand-dark); }
+  .faq-q { width: 100%; text-align: left; padding: 24px 0; display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; background: none; border: none; cursor: pointer; font-family: 'Noto Sans JP', sans-serif; font-size: 0.95rem; color: var(--text); line-height: 1.6; }
+  .faq-q:hover { color: var(--green); }
+  .faq-q-text { display: flex; gap: 12px; align-items: flex-start; }
+  .faq-q-label { background: var(--green); color: white; font-size: 0.7rem; padding: 3px 8px; border-radius: 2px; flex-shrink: 0; margin-top: 2px; letter-spacing: 0.05em; }
+  .faq-icon { font-size: 1.2rem; color: var(--green); flex-shrink: 0; transition: transform 0.3s; }
+  .faq-item.open .faq-icon { transform: rotate(45deg); }
+  .faq-a { display: none; padding: 0 0 24px 40px; font-size: 0.87rem; color: var(--text-light); line-height: 2; }
+  .faq-item.open .faq-a { display: block; }
+  .faq-a-highlight { background: var(--green-pale); border-left: 3px solid var(--green); padding: 14px 18px; border-radius: 0 4px 4px 0; margin-top: 12px; font-size: 0.83rem; color: var(--green); }
+
+  .cta-section { background: var(--text); border-radius: 8px; padding: 56px 60px; display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; margin-top: 80px; }
+  .cta-title { font-family: 'Shippori Mincho', serif; font-size: 1.6rem; color: white; line-height: 1.6; margin-bottom: 12px; }
+  .cta-sub { font-size: 0.83rem; color: rgba(255,255,255,0.6); line-height: 2; }
+  .cta-right { display: flex; flex-direction: column; gap: 14px; }
+  .cta-tel { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12); border-radius: 4px; padding: 24px 28px; }
+  .cta-tel-label { font-size: 0.7rem; color: rgba(255,255,255,0.5); letter-spacing: 0.2em; margin-bottom: 6px; }
+  .cta-tel-num { font-family: 'Shippori Mincho', serif; font-size: 1.8rem; color: white; }
+  .cta-tel-hours { font-size: 0.72rem; color: rgba(255,255,255,0.4); margin-top: 6px; }
+  .cta-btn { background: var(--green); color: white; text-align: center; padding: 18px; text-decoration: none; border-radius: 4px; font-size: 0.88rem; letter-spacing: 0.1em; display: block; }
+  .cta-btn:hover { background: var(--green-light); }
+
+  footer { background: #1a1a1a; padding: 40px 80px; display: flex; justify-content: space-between; align-items: center; margin-top: 80px; }
+  .footer-logo { font-family: 'Shippori Mincho', serif; font-size: 1.1rem; color: rgba(255,255,255,0.4); line-height: 1.4; }
+  .footer-logo span { display: block; font-size: 0.6rem; color: rgba(255,255,255,0.25); letter-spacing: 0.15em; font-family: 'Noto Sans JP', sans-serif; }
+  .footer-copy { font-size: 0.72rem; color: rgba(255,255,255,0.25); }
+
+  @media (max-width: 900px) {
+    header { padding: 16px 24px; } nav { display: none; }
+    .page-hero-inner { padding: 40px 32px; }
+    .breadcrumb { padding: 12px 32px; }
+    main { padding: 48px 32px; }
+    .cta-section { grid-template-columns: 1fr; padding: 36px 28px; gap: 32px; }
+    footer { flex-direction: column; gap: 12px; padding: 32px; text-align: center; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <a href="index.html" class="logo">toreta整体院<span>富士見台本院</span></a>
+  <nav>
+    <a href="index.html">HOME</a>
+    <a href="toreta_plan.html">料金</a>
+    <a href="toreta_member.html">スタッフ</a>
+    <a href="toreta_access.html">アクセス</a>
+    <a href="tel:0358488252" class="nav-cta">📞 予約・お問い合わせ</a>
+  </nav>
+</header>
+
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <div class="page-label">FAQ</div>
+    <h1 class="page-title">よくある質問</h1>
+    <p class="page-desc">初めての方が気になる疑問にお答えします。<br>その他ご不明な点はお気軽にお電話ください。</p>
+  </div>
+</div>
+
+<div class="breadcrumb">
+  <a href="index.html">HOME</a><span>›</span><span>よくある質問</span>
+</div>
+
+<main>
+
+  <!-- 施術について -->
+  <div class="faq-category">
+    <div class="faq-category-title">🏥 施術について</div>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        <div class="faq-q-text"><span class="faq-q-label">Q</span>どんな施術をするのですか？</div>
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-a">
+        構造医学に基づき、骨格・骨盤のバランスを検査してから施術を行います。特殊なローラーでの骨格矯正・骨盤矯正・ウォーターベッドを利用した運動療法が主な施術です。<br><br>
+        従来の「ボキボキ」する施術は一切行いません。身体に負担がかからないよう、やさしく施術していきます。
+        <div class="faq-a-highlight">💡 「痛くないやさしい整体」がtoretaの大きな特徴です。</div>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        <div class="faq-q-text"><span class="faq-q-label">Q</span>施術は何回くらい必要ですか？</div>
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-a">
+        症状や状態によって異なります。初回に症状を診せていただいたうえで、治療計画をご提案します。急性の症状は早期に改善するケースも多く、慢性的な痛みは継続的なケアが効果的です。
+        <div class="faq-a-highlight">💡 まずは1回来てみてください。施術後に今後の方針をわかりやすくご説明します。</div>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        <div class="faq-q-text"><span class="faq-q-label">Q</span>どんな症状に対応していますか？</div>
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-a">
+        腰痛・肩こり・首こり・頭痛・坐骨神経痛・ヘルニア・ぎっくり腰・膝の痛み・産後の骨盤矯正・生理痛・からだの歪みなど、幅広い症状に対応しています。<br><br>
+        「病院で異常なし」「他院で治らなかった」という方もお気軽にご相談ください。
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        <div class="faq-q-text"><span class="faq-q-label">Q</span>妊婦でも施術できますか？</div>
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-a">
+        妊婦の方でも施術できます。妊婦の方でも使えるベッドや施術方法がありますので、安心してご来院ください。産後の骨盤矯正にも対応しています。
+        <div class="faq-a-highlight">💡 ベビーカーでのご来院も事前にお伝えいただければ対応できます。</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 料金・保険について -->
+  <div class="faq-category">
+    <div class="faq-category-title">💴 料金・保険について</div>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        <div class="faq-q-text"><span class="faq-q-label">Q</span>料金はいくらですか？</div>
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-a">
+        富士見台本院は完全自費診療です。<br><br>
+        <strong>1回券：5,000円</strong>（税込）<br>
+        <strong>6回券：28,000円</strong>（税込・約2,000円お得）<br><br>
+        お身体の状態に合わせてご提案いたします。
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        <div class="faq-q-text"><span class="faq-q-label">Q</span>健康保険は使えますか？</div>
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-a">
+        富士見台本院は健康保険の取り扱いがございません。完全自費診療となります。<br><br>
+        健康保険・交通事故保険・労災保険をご希望の方は、<a href="https://toreta-yugami.jp" target="_blank" style="color:var(--green);">都立家政院</a>をご利用ください。
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        <div class="faq-q-text"><span class="faq-q-label">Q</span>PayPayは使えますか？</div>
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-a">
+        はい、PayPayでのお支払いが可能です。練馬区のPayPay還元キャンペーン対象店ですので、キャンペーン期間中はさらにお得にご利用いただけます。
+      </div>
+    </div>
+  </div>
+
+  <!-- 来院について -->
+  <div class="faq-category">
+    <div class="faq-category-title">🚶 来院について</div>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        <div class="faq-q-text"><span class="faq-q-label">Q</span>どんな服装で行けばいいですか？</div>
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-a">
+        着替えをご用意していますので、仕事帰りでも気にせずご来院いただけます。着替えが不要な方は、患部を出せる服装でお越しください。
+        <div class="faq-a-highlight">💡 スーツや制服のままお越しいただいても大丈夫です。</div>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        <div class="faq-q-text"><span class="faq-q-label">Q</span>予約は必要ですか？</div>
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-a">
+        予約制となっています。お電話またはメールフォームよりご予約ください。当日予約も可能です。急なぎっくり腰などの場合もまずはご連絡ください。できる限り対応いたします。
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        <div class="faq-q-text"><span class="faq-q-label">Q</span>何時まで受け付けていますか？</div>
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-a">
+        平日（月〜金）は21:00まで受付しています。土・日は18:00まで。年中無休（年末年始除く）です。<br><br>
+        急患の場合はできるだけ対応いたしますので、まずはご連絡ください。
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        <div class="faq-q-text"><span class="faq-q-label">Q</span>子ども連れでも大丈夫ですか？</div>
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-a">
+        はい、お子さん連れでもご来院いただけます。ベビーカーでのご来院も、事前にお伝えいただければ対応可能です。お気軽にご相談ください。
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        <div class="faq-q-text"><span class="faq-q-label">Q</span>初めてで不安なのですが…</div>
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-a">
+        初めての方も安心してお越しください。まず問診でしっかりお話を聞き、痛みの原因をわかりやすくご説明してから施術を始めます。「痛くないか」を確認しながら進めますので、遠慮なくお申し出ください。
+        <div class="faq-a-highlight">💡 「整体が初めて」「本当に治るか不安」という方のご相談も大歓迎です。</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div>
+      <h2 class="cta-title">その他のご質問も<br>お気軽にどうぞ。</h2>
+      <p class="cta-sub">電話でのご質問だけでも<br>大歓迎です。</p>
+    </div>
+    <div class="cta-right">
+      <div class="cta-tel">
+        <div class="cta-tel-label">TEL</div>
+        <div class="cta-tel-num">03-5848-8252</div>
+        <div class="cta-tel-hours">月〜金 10:00〜21:00　／　土・日 10:00〜18:00<br>年中無休（年末年始除く）</div>
+      </div>
+      <a href="https://itami-toreta.jp/contact.html" class="cta-btn">メールでのお問い合わせ</a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="footer-logo">toreta整体院<span>富士見台本院</span></div>
+  <p class="footer-copy">© toreta整体院 富士見台本院</p>
+</footer>
+
+<script>
+function toggleFaq(btn) {
+  const item = btn.parentElement;
+  item.classList.toggle('open');
+}
+</script>
+
+</body>
+</html>

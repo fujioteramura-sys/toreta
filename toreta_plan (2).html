@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>コース・料金｜toreta整体院 富士見台本院</title>
+<meta name="description" content="toreta整体院富士見台本院のコース・料金ページ。完全自費診療（カイロプラクティック）1回5,000円・6回券28,000円。腰痛・肩こり・坐骨神経痛・産後の骨盤矯正など幅広く対応。練馬区富士見台駅徒歩1分。">
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;600&family=Noto+Sans+JP:wght@300;400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --green: #3d6b4f;
+    --green-light: #5a8c6a;
+    --green-pale: #eef4f0;
+    --sand: #f5f0e8;
+    --sand-dark: #e8dfc8;
+    --text: #2a2a2a;
+    --text-light: #5a5a5a;
+    --white: #fdfcfa;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Noto Sans JP', sans-serif; background: var(--white); color: var(--text); overflow-x: hidden; }
+
+  /* HEADER */
+  header {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 18px 40px;
+    background: rgba(253,252,250,0.95); backdrop-filter: blur(8px);
+    border-bottom: 1px solid rgba(61,107,79,0.12);
+  }
+  .logo { font-family: 'Shippori Mincho', serif; font-size: 1.2rem; color: var(--green); letter-spacing: 0.08em; text-decoration: none; line-height: 1.4; }
+  .logo span { display: block; font-size: 0.65rem; color: var(--text-light); letter-spacing: 0.15em; font-family: 'Noto Sans JP', sans-serif; font-weight: 300; }
+  nav { display: flex; gap: 28px; align-items: center; }
+  nav a { font-size: 0.78rem; color: var(--text-light); text-decoration: none; letter-spacing: 0.1em; transition: color 0.2s; }
+  nav a:hover { color: var(--green); }
+  nav a.active { color: var(--green); font-weight: 400; }
+  .nav-cta { background: var(--green); color: white !important; padding: 10px 22px; border-radius: 2px; }
+  .nav-cta:hover { background: var(--green-light) !important; }
+
+  /* PAGE HERO */
+  .page-hero {
+    padding-top: 70px;
+    background: var(--sand);
+    padding-bottom: 0;
+  }
+  .page-hero-inner {
+    padding: 60px 80px 0;
+    display: flex;
+    align-items: flex-end;
+    gap: 60px;
+  }
+  .page-hero-text { flex: 1; padding-bottom: 60px; }
+  .page-label { font-size: 0.7rem; letter-spacing: 0.3em; color: var(--green); margin-bottom: 16px; display: flex; align-items: center; gap: 12px; }
+  .page-label::after { content: ''; flex: 1; max-width: 60px; height: 1px; background: var(--green); }
+  .page-title { font-family: 'Shippori Mincho', serif; font-size: clamp(1.8rem, 3vw, 2.8rem); line-height: 1.5; margin-bottom: 16px; }
+  .page-desc { font-size: 0.88rem; color: var(--text-light); line-height: 2; }
+  .page-hero-accent {
+    width: 280px; height: 200px;
+    background: var(--green);
+    border-radius: 4px 4px 0 0;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+  }
+  .page-hero-accent-text {
+    font-family: 'Shippori Mincho', serif;
+    font-size: 5rem;
+    color: rgba(255,255,255,0.1);
+    font-weight: 600;
+  }
+
+  /* BREADCRUMB */
+  .breadcrumb {
+    background: var(--sand-dark);
+    padding: 12px 80px;
+    font-size: 0.72rem;
+    color: var(--text-light);
+    display: flex; gap: 8px; align-items: center;
+  }
+  .breadcrumb a { color: var(--green); text-decoration: none; }
+  .breadcrumb a:hover { text-decoration: underline; }
+
+  /* MAIN */
+  main { max-width: 1100px; margin: 0 auto; padding: 80px 80px; }
+
+  .section-label { font-size: 0.7rem; letter-spacing: 0.3em; color: var(--green); margin-bottom: 16px; display: flex; align-items: center; gap: 12px; }
+  .section-label::after { content: ''; flex: 1; max-width: 60px; height: 1px; background: var(--green); }
+  .section-title { font-family: 'Shippori Mincho', serif; font-size: clamp(1.4rem, 2vw, 1.8rem); line-height: 1.6; margin-bottom: 40px; }
+
+  /* PRICE CARD */
+  .price-section { margin-bottom: 80px; }
+
+  .price-card {
+    background: var(--green);
+    border-radius: 8px;
+    padding: 56px 60px;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 24px;
+  }
+  .price-card::before {
+    content: '¥';
+    position: absolute;
+    right: 40px; top: 20px;
+    font-family: 'Shippori Mincho', serif;
+    font-size: 10rem;
+    color: rgba(255,255,255,0.06);
+    line-height: 1;
+  }
+  .price-card-label {
+    font-size: 0.72rem;
+    letter-spacing: 0.3em;
+    color: rgba(255,255,255,0.7);
+    margin-bottom: 16px;
+  }
+  .price-card-title {
+    font-family: 'Shippori Mincho', serif;
+    font-size: 1.6rem;
+    margin-bottom: 8px;
+  }
+  .price-card-sub {
+    font-size: 0.8rem;
+    color: rgba(255,255,255,0.7);
+    margin-bottom: 40px;
+  }
+  .price-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    position: relative;
+    z-index: 1;
+  }
+  .price-item {
+    background: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 4px;
+    padding: 28px 32px;
+  }
+  .price-item-label {
+    font-size: 0.75rem;
+    color: rgba(255,255,255,0.65);
+    letter-spacing: 0.1em;
+    margin-bottom: 10px;
+  }
+  .price-item-amount {
+    font-family: 'Shippori Mincho', serif;
+    font-size: 2.2rem;
+    color: white;
+    line-height: 1;
+  }
+  .price-item-amount small {
+    font-size: 1rem;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 300;
+  }
+  .price-item-note {
+    font-size: 0.72rem;
+    color: rgba(255,255,255,0.55);
+    margin-top: 8px;
+  }
+  .price-badge {
+    display: inline-block;
+    background: #f5a623;
+    color: white;
+    font-size: 0.72rem;
+    padding: 4px 12px;
+    border-radius: 12px;
+    margin-top: 10px;
+    letter-spacing: 0.05em;
+  }
+
+  .price-note {
+    background: var(--green-pale);
+    border-left: 3px solid var(--green);
+    border-radius: 0 4px 4px 0;
+    padding: 20px 24px;
+    font-size: 0.83rem;
+    color: var(--text-light);
+    line-height: 1.8;
+  }
+
+  /* TARGETS */
+  .targets { margin-bottom: 80px; }
+  .targets-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+  .target-item {
+    background: var(--sand);
+    border-radius: 4px;
+    padding: 24px 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    transition: transform 0.2s;
+  }
+  .target-item:hover { transform: translateY(-2px); }
+  .target-icon {
+    width: 36px; height: 36px;
+    background: var(--green);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    color: white;
+    font-size: 1rem;
+    flex-shrink: 0;
+  }
+  .target-text { font-size: 0.85rem; color: var(--text); }
+
+  /* STRUCTURAL MEDICINE */
+  .structural { margin-bottom: 80px; background: var(--sand); border-radius: 8px; padding: 56px 60px; }
+  .structural-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+  .structural-text {}
+  .structural-title { font-family: 'Shippori Mincho', serif; font-size: 1.4rem; line-height: 1.6; margin-bottom: 20px; }
+  .structural-desc { font-size: 0.85rem; color: var(--text-light); line-height: 2.1; }
+  .structural-points { display: flex; flex-direction: column; gap: 16px; }
+  .structural-point {
+    background: white;
+    border-radius: 4px;
+    padding: 20px 24px;
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+    border-left: 3px solid var(--green);
+  }
+  .structural-point-num {
+    font-family: 'Shippori Mincho', serif;
+    font-size: 1.5rem;
+    color: var(--green);
+    line-height: 1;
+    flex-shrink: 0;
+  }
+  .structural-point-text { font-size: 0.83rem; color: var(--text); line-height: 1.8; }
+  .structural-point-title { font-family: 'Shippori Mincho', serif; font-size: 1rem; margin-bottom: 4px; }
+
+  /* FLOW */
+  .flow { margin-bottom: 80px; }
+  .flow-steps { display: flex; flex-direction: column; gap: 0; }
+  .flow-step {
+    display: flex;
+    gap: 28px;
+    padding-bottom: 32px;
+    position: relative;
+  }
+  .flow-step:not(:last-child)::before {
+    content: '';
+    position: absolute;
+    left: 23px; top: 48px; bottom: 0;
+    width: 1px;
+    background: var(--sand-dark);
+  }
+  .flow-step-num {
+    width: 48px; height: 48px;
+    border-radius: 50%;
+    background: var(--green);
+    color: white;
+    font-family: 'Shippori Mincho', serif;
+    font-size: 1.2rem;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 1;
+  }
+  .flow-step-content { padding-top: 10px; }
+  .flow-step-title { font-family: 'Shippori Mincho', serif; font-size: 1.05rem; margin-bottom: 8px; }
+  .flow-step-text { font-size: 0.83rem; color: var(--text-light); line-height: 1.9; }
+
+  /* CTA */
+  .cta-section {
+    background: var(--text);
+    border-radius: 8px;
+    padding: 56px 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    margin-bottom: 0;
+  }
+  .cta-title { font-family: 'Shippori Mincho', serif; font-size: 1.6rem; color: white; line-height: 1.6; margin-bottom: 12px; }
+  .cta-sub { font-size: 0.83rem; color: rgba(255,255,255,0.6); line-height: 2; }
+  .cta-right { display: flex; flex-direction: column; gap: 14px; }
+  .cta-tel { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12); border-radius: 4px; padding: 24px 28px; }
+  .cta-tel-label { font-size: 0.7rem; color: rgba(255,255,255,0.5); letter-spacing: 0.2em; margin-bottom: 6px; }
+  .cta-tel-num { font-family: 'Shippori Mincho', serif; font-size: 1.8rem; color: white; }
+  .cta-tel-hours { font-size: 0.72rem; color: rgba(255,255,255,0.4); margin-top: 6px; }
+  .cta-btn { background: var(--green); color: white; text-align: center; padding: 18px; text-decoration: none; border-radius: 4px; font-size: 0.88rem; letter-spacing: 0.1em; transition: background 0.2s; display: block; }
+  .cta-btn:hover { background: var(--green-light); }
+
+  /* FOOTER */
+  footer { background: #1a1a1a; padding: 40px 80px; display: flex; justify-content: space-between; align-items: center; margin-top: 80px; }
+  .footer-logo { font-family: 'Shippori Mincho', serif; font-size: 1.1rem; color: rgba(255,255,255,0.4); line-height: 1.4; }
+  .footer-logo span { display: block; font-size: 0.6rem; color: rgba(255,255,255,0.25); letter-spacing: 0.15em; font-family: 'Noto Sans JP', sans-serif; }
+  .footer-copy { font-size: 0.72rem; color: rgba(255,255,255,0.25); letter-spacing: 0.1em; }
+
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+  .page-hero-text { animation: fadeUp 0.7s ease both; }
+
+  @media (max-width: 900px) {
+    header { padding: 16px 24px; }
+    nav { display: none; }
+    .page-hero-inner { padding: 40px 32px 0; flex-direction: column; gap: 0; }
+    .page-hero-accent { display: none; }
+    .breadcrumb { padding: 12px 32px; }
+    main { padding: 48px 32px; }
+    .price-card { padding: 36px 28px; }
+    .price-grid { grid-template-columns: 1fr; }
+    .targets-grid { grid-template-columns: 1fr 1fr; }
+    .structural { padding: 36px 28px; }
+    .structural-grid { grid-template-columns: 1fr; gap: 32px; }
+    .cta-section { grid-template-columns: 1fr; padding: 36px 28px; gap: 32px; }
+    footer { flex-direction: column; gap: 12px; padding: 32px; text-align: center; }
+  }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <a href="index.html" class="logo">
+    toreta整体院
+    <span>富士見台本院</span>
+  </a>
+  <nav>
+    <a href="index.html">はじめての方へ</a>
+    <a href="toreta_about.html">施術について</a>
+    <a href="toreta_plan.html" class="active">料金</a>
+    <a href="toreta_member.html">スタッフ</a>
+    <a href="toreta_access.html">アクセス</a>
+    <a href="tel:0358488252" class="nav-cta">📞 予約・お問い合わせ</a>
+  </nav>
+</header>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <div class="page-hero-text">
+      <div class="page-label">COURSE & PRICE</div>
+      <h1 class="page-title">コース・料金</h1>
+      <p class="page-desc">
+        toretaでは完全自費診療で、<br>
+        一人ひとりの症状に合わせた施術を提供しています。
+      </p>
+    </div>
+    <div class="page-hero-accent">
+      <div class="page-hero-accent-text">¥</div>
+    </div>
+  </div>
+</div>
+
+<!-- BREADCRUMB -->
+<div class="breadcrumb">
+  <a href="index.html">HOME</a>
+  <span>›</span>
+  <span>コース・料金</span>
+</div>
+
+<!-- MAIN -->
+<main>
+
+  <!-- PRICE -->
+  <section class="price-section">
+    <div class="section-label">PRICE</div>
+    <h2 class="section-title">施術料金</h2>
+
+    <div class="price-card">
+      <div class="price-card-label">COMPLETE SELF-PAY</div>
+      <div class="price-card-title">完全自費診療（カイロプラクティック）</div>
+      <div class="price-card-sub">保険診療ではなく、根本治療に特化した自費施術です</div>
+      <div class="price-grid">
+        <div class="price-item">
+          <div class="price-item-label">1回券</div>
+          <div class="price-item-amount">5,000<small>円</small></div>
+          <div class="price-item-note">（税込）</div>
+        </div>
+        <div class="price-item">
+          <div class="price-item-label">6回券</div>
+          <div class="price-item-amount">28,000<small>円</small></div>
+          <div class="price-item-note">（税込・1回あたり約4,666円）</div>
+          <div class="price-badge">約2,000円お得！</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="price-note">
+      💡 都立家政院では、各種保険診療・交通事故の対応も行っています。お気軽にご相談ください。<br>
+      <a href="https://toreta-yugami.jp" target="_blank" style="color:var(--green);">都立家政院のホームページはこちら →</a>
+    </div>
+  </section>
+
+  <!-- TARGETS -->
+  <section class="targets">
+    <div class="section-label">TARGETS</div>
+    <h2 class="section-title">toretaで改善できる症状</h2>
+    <div class="targets-grid">
+      <div class="target-item"><div class="target-icon">💆</div><div class="target-text">肩こり・首こり</div></div>
+      <div class="target-item"><div class="target-icon">🦴</div><div class="target-text">腰痛・慢性腰痛</div></div>
+      <div class="target-item"><div class="target-icon">⚡</div><div class="target-text">坐骨神経痛</div></div>
+      <div class="target-item"><div class="target-icon">🤕</div><div class="target-text">ヘルニア</div></div>
+      <div class="target-item"><div class="target-icon">💥</div><div class="target-text">ぎっくり腰</div></div>
+      <div class="target-item"><div class="target-icon">🧠</div><div class="target-text">頭痛・偏頭痛</div></div>
+      <div class="target-item"><div class="target-icon">🦵</div><div class="target-text">膝の痛み</div></div>
+      <div class="target-item"><div class="target-icon">👶</div><div class="target-text">産後の骨盤矯正</div></div>
+      <div class="target-item"><div class="target-icon">🚗</div><div class="target-text">交通事故の不調</div></div>
+      <div class="target-item"><div class="target-icon">🌸</div><div class="target-text">生理痛の改善</div></div>
+      <div class="target-item"><div class="target-icon">🧍</div><div class="target-text">からだの歪み</div></div>
+      <div class="target-item"><div class="target-icon">😴</div><div class="target-text">しびれの改善</div></div>
+    </div>
+  </section>
+
+  <!-- STRUCTURAL MEDICINE -->
+  <section class="structural">
+    <div class="structural-grid">
+      <div class="structural-text">
+        <div class="section-label">STRUCTURAL MEDICINE</div>
+        <h2 class="structural-title">toretaが大切にしている<br>「構造医学」とは</h2>
+        <p class="structural-desc">
+          構造医学とは、「重力」を診断と施術に導入した学問です。運動力学・流体力学・熱力学など物理学をもとに、人体と重力の関係から痛みの原因を深く探るという考え方です。単に痛みをとるだけで終わらせることなく、姿勢や歩行など患者さんの生活習慣から見直すことで、根本からの改善を目指します。
+        </p>
+      </div>
+      <div class="structural-points">
+        <div class="structural-point">
+          <div class="structural-point-num">01</div>
+          <div class="structural-point-text">
+            <div class="structural-point-title">引っ張らない</div>
+            身体に無理な力を加えない、やさしい施術です。
+          </div>
+        </div>
+        <div class="structural-point">
+          <div class="structural-point-num">02</div>
+          <div class="structural-point-text">
+            <div class="structural-point-title">痛みを伴わない</div>
+            ボキボキしない。施術中もリラックスできます。
+          </div>
+        </div>
+        <div class="structural-point">
+          <div class="structural-point-num">03</div>
+          <div class="structural-point-text">
+            <div class="structural-point-title">長引かせない</div>
+            根本原因にアプローチするから、再発しにくい。
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FLOW -->
+  <section class="flow">
+    <div class="section-label">FLOW</div>
+    <h2 class="section-title">施術の流れ</h2>
+    <div class="flow-steps">
+      <div class="flow-step">
+        <div class="flow-step-num">1</div>
+        <div class="flow-step-content">
+          <div class="flow-step-title">ご予約・来院</div>
+          <p class="flow-step-text">お電話またはメールフォームよりご予約ください。当日予約も可能です。富士見台駅から徒歩1分とアクセス抜群です。</p>
+        </div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-step-num">2</div>
+        <div class="flow-step-content">
+          <div class="flow-step-title">問診・カウンセリング</div>
+          <p class="flow-step-text">どこが・いつから・どんな時に痛いか、丁寧にヒアリングします。初めての方も、焦らずゆっくりお話ください。</p>
+        </div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-step-num">3</div>
+        <div class="flow-step-content">
+          <div class="flow-step-title">検査・原因の説明</div>
+          <p class="flow-step-text">姿勢・骨格のバランスを検査し、痛みの原因をわかりやすくご説明します。「なぜ痛いのか」を理解することが改善への第一歩です。</p>
+        </div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-step-num">4</div>
+        <div class="flow-step-content">
+          <div class="flow-step-title">施術</div>
+          <p class="flow-step-text">構造医学に基づいた、痛くないやさしい施術です。ローラー器具など特殊な器具を用いて、丁寧に施術します。</p>
+        </div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-step-num">5</div>
+        <div class="flow-step-content">
+          <div class="flow-step-title">アフターケア・セルフケアのアドバイス</div>
+          <p class="flow-step-text">施術後は日常生活での姿勢や体操など、再発しないためのセルフケアをお伝えします。次回の施術についてもご相談いただけます。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div>
+      <h2 class="cta-title">まずは、お気軽に<br>ご相談ください。</h2>
+      <p class="cta-sub">料金や施術内容についての<br>ご質問だけでも大歓迎です。</p>
+    </div>
+    <div class="cta-right">
+      <div class="cta-tel">
+        <div class="cta-tel-label">TEL</div>
+        <div class="cta-tel-num">03-5848-8252</div>
+        <div class="cta-tel-hours">月〜金 10:00〜21:00　／　土・日 10:00〜18:00<br>年中無休（年末年始除く）</div>
+      </div>
+      <a href="https://itami-toreta.jp/contact.html" class="cta-btn">メールでのお問い合わせ・ご予約</a>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">
+    toreta整体院
+    <span>富士見台本院</span>
+  </div>
+  <p class="footer-copy">© toreta整体院 富士見台本院</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>施術について｜toreta整体院 富士見台本院</title>
+<meta name="description" content="toreta整体院富士見台本院の施術について。構造医学に基づき、ゆがみ検査で痛みの根本原因を特定。骨盤・脊柱・頚椎を安全に整え、再発しない身体づくりをサポートします。">
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;600&family=Noto+Sans+JP:wght@300;400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --green: #3d6b4f; --green-light: #5a8c6a; --green-pale: #eef4f0;
+    --sand: #f5f0e8; --sand-dark: #e8dfc8; --text: #2a2a2a; --text-light: #5a5a5a; --white: #fdfcfa;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Noto Sans JP', sans-serif; background: var(--white); color: var(--text); overflow-x: hidden; line-height: 1.8; }
+
+  header { position: fixed; top: 0; left: 0; right: 0; z-index: 100; display: flex; justify-content: space-between; align-items: center; padding: 18px 40px; background: rgba(253,252,250,0.95); backdrop-filter: blur(8px); border-bottom: 1px solid rgba(61,107,79,0.12); }
+  .logo { font-family: 'Shippori Mincho', serif; font-size: 1.2rem; color: var(--green); letter-spacing: 0.08em; text-decoration: none; line-height: 1.4; }
+  .logo span { display: block; font-size: 0.65rem; color: var(--text-light); letter-spacing: 0.15em; font-family: 'Noto Sans JP', sans-serif; font-weight: 300; }
+  nav { display: flex; gap: 28px; align-items: center; }
+  nav a { font-size: 0.78rem; color: var(--text-light); text-decoration: none; letter-spacing: 0.1em; transition: color 0.2s; }
+  nav a:hover { color: var(--green); }
+  nav a.active { color: var(--green); font-weight: 400; }
+  .nav-cta { background: var(--green); color: white !important; padding: 10px 22px; border-radius: 2px; }
+
+  .page-hero { padding-top: 70px; background: var(--green); }
+  .page-hero-inner { padding: 80px 80px; }
+  .page-label { font-size: 0.7rem; letter-spacing: 0.3em; color: rgba(255,255,255,0.6); margin-bottom: 16px; display: flex; align-items: center; gap: 12px; }
+  .page-label::after { content: ''; flex: 1; max-width: 60px; height: 1px; background: rgba(255,255,255,0.4); }
+  .page-title { font-family: 'Shippori Mincho', serif; font-size: clamp(1.8rem, 3vw, 2.8rem); line-height: 1.5; margin-bottom: 8px; color: white; }
+  .page-subtitle { font-family: 'Shippori Mincho', serif; font-size: 1rem; color: rgba(255,255,255,0.75); margin-bottom: 0; }
+
+  .breadcrumb { background: var(--sand-dark); padding: 12px 80px; font-size: 0.72rem; color: var(--text-light); display: flex; gap: 8px; }
+  .breadcrumb a { color: var(--green); text-decoration: none; }
+
+  main { max-width: 860px; margin: 0 auto; padding: 80px 80px; }
+
+  .section-label { font-size: 0.7rem; letter-spacing: 0.3em; color: var(--green); margin-bottom: 16px; display: flex; align-items: center; gap: 12px; }
+  .section-label::after { content: ''; flex: 1; max-width: 60px; height: 1px; background: var(--green); }
+  .section-title { font-family: 'Shippori Mincho', serif; font-size: 1.6rem; margin-bottom: 24px; line-height: 1.6; }
+
+  /* PHILOSOPHY */
+  .philosophy { margin-bottom: 80px; }
+  .philosophy-lead { font-family: 'Shippori Mincho', serif; font-size: 1.1rem; color: var(--green); line-height: 2; margin-bottom: 32px; padding: 28px 32px; background: var(--green-pale); border-left: 4px solid var(--green); border-radius: 0 4px 4px 0; }
+  .philosophy-text { font-size: 0.92rem; color: var(--text-light); line-height: 2.2; margin-bottom: 24px; }
+
+  /* FEATURE CARDS */
+  .features { margin-bottom: 80px; }
+  .feature-grid { display: flex; flex-direction: column; gap: 24px; }
+  .feature-card { background: var(--sand); border-radius: 8px; padding: 40px; display: grid; grid-template-columns: 80px 1fr; gap: 32px; align-items: start; }
+  .feature-icon { width: 80px; height: 80px; background: var(--green); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2rem; flex-shrink: 0; }
+  .feature-content {}
+  .feature-title { font-family: 'Shippori Mincho', serif; font-size: 1.2rem; color: var(--text); margin-bottom: 12px; }
+  .feature-text { font-size: 0.87rem; color: var(--text-light); line-height: 2; }
+
+  /* STORY */
+  .story { margin-bottom: 80px; background: var(--white); }
+  .story-inner { border: 1px solid var(--sand-dark); border-radius: 8px; padding: 48px; position: relative; }
+  .story-inner::before { content: '"'; font-family: 'Shippori Mincho', serif; font-size: 8rem; color: var(--green); opacity: 0.08; position: absolute; top: 0; left: 24px; line-height: 1; }
+  .story-text { font-size: 0.9rem; color: var(--text-light); line-height: 2.3; }
+
+  /* SYMPTOMS */
+  .symptoms { margin-bottom: 80px; }
+  .symptom-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+  .symptom-item { background: var(--sand); border-radius: 4px; padding: 16px 20px; display: flex; align-items: center; gap: 12px; font-size: 0.87rem; }
+  .symptom-check { width: 24px; height: 24px; background: var(--green); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 0.7rem; flex-shrink: 0; }
+
+  /* POLICY */
+  .policy { margin-bottom: 80px; }
+  .policy-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  .policy-card { background: var(--green); border-radius: 8px; padding: 32px 24px; text-align: center; color: white; }
+  .policy-num { font-family: 'Shippori Mincho', serif; font-size: 2.5rem; color: rgba(255,255,255,0.3); line-height: 1; margin-bottom: 12px; }
+  .policy-title { font-family: 'Shippori Mincho', serif; font-size: 1rem; margin-bottom: 10px; }
+  .policy-text { font-size: 0.78rem; color: rgba(255,255,255,0.8); line-height: 1.8; }
+
+  /* CTA */
+  .cta-section { background: var(--text); border-radius: 8px; padding: 56px 60px; display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+  .cta-title { font-family: 'Shippori Mincho', serif; font-size: 1.6rem; color: white; line-height: 1.6; margin-bottom: 12px; }
+  .cta-sub { font-size: 0.83rem; color: rgba(255,255,255,0.6); line-height: 2; }
+  .cta-right { display: flex; flex-direction: column; gap: 14px; }
+  .cta-tel { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12); border-radius: 4px; padding: 24px 28px; }
+  .cta-tel-label { font-size: 0.7rem; color: rgba(255,255,255,0.5); letter-spacing: 0.2em; margin-bottom: 6px; }
+  .cta-tel-num { font-family: 'Shippori Mincho', serif; font-size: 1.8rem; color: white; }
+  .cta-tel-hours { font-size: 0.72rem; color: rgba(255,255,255,0.4); margin-top: 6px; }
+  .cta-btn { background: var(--green); color: white; text-align: center; padding: 18px; text-decoration: none; border-radius: 4px; font-size: 0.88rem; letter-spacing: 0.1em; display: block; }
+  .cta-btn:hover { background: var(--green-light); }
+
+  footer { background: #1a1a1a; padding: 40px 80px; display: flex; justify-content: space-between; align-items: center; margin-top: 80px; }
+  .footer-logo { font-family: 'Shippori Mincho', serif; font-size: 1.1rem; color: rgba(255,255,255,0.4); line-height: 1.4; }
+  .footer-logo span { display: block; font-size: 0.6rem; color: rgba(255,255,255,0.25); letter-spacing: 0.15em; font-family: 'Noto Sans JP', sans-serif; }
+  .footer-copy { font-size: 0.72rem; color: rgba(255,255,255,0.25); }
+
+  @media (max-width: 900px) {
+    header { padding: 16px 24px; } nav { display: none; }
+    .page-hero-inner { padding: 40px 32px; }
+    .breadcrumb { padding: 12px 32px; }
+    main { padding: 48px 32px; }
+    .feature-card { grid-template-columns: 1fr; gap: 16px; }
+    .feature-icon { width: 56px; height: 56px; font-size: 1.5rem; }
+    .symptom-grid { grid-template-columns: 1fr; }
+    .policy-grid { grid-template-columns: 1fr; }
+    .story-inner { padding: 32px 24px; }
+    .cta-section { grid-template-columns: 1fr; padding: 36px 28px; gap: 32px; }
+    footer { flex-direction: column; gap: 12px; padding: 32px; text-align: center; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <a href="index.html" class="logo">toreta整体院<span>富士見台本院</span></a>
+  <nav>
+    <a href="index.html">はじめての方へ</a>
+    <a href="toreta_about.html" class="active">施術について</a>
+    <a href="toreta_plan.html">料金</a>
+    <a href="toreta_member.html">スタッフ</a>
+    <a href="toreta_access.html">アクセス</a>
+    <a href="tel:0358488252" class="nav-cta">📞 予約・お問い合わせ</a>
+  </nav>
+</header>
+
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <div class="page-label">ABOUT TREATMENT</div>
+    <h1 class="page-title">施術について</h1>
+    <p class="page-subtitle">根を張って生きる　ヒトを学ぶ　めぐる身体づくり</p>
+  </div>
+</div>
+
+<div class="breadcrumb">
+  <a href="index.html">HOME</a><span>›</span><span>施術について</span>
+</div>
+
+<main>
+
+  <!-- 施術の考え方 -->
+  <section class="philosophy">
+    <div class="section-label">OUR PHILOSOPHY</div>
+    <h2 class="section-title">痛みの原因を<br>正確に見極める</h2>
+    <div class="philosophy-lead">
+      当院では身体の不調がどの部分からの影響なのかを、さまざまなゆがみ検査（スクリーニングテスト）によって原因を特定していきます。
+    </div>
+    <p class="philosophy-text">
+      例えば、「体重が掛かり過ぎた（加圧）腰痛」と「片脚休めで骨盤が下がって引っ張られた（減圧）腰痛」は同じように痛くても原因は全く異なります。原因が異なれば、カラダのゆがみも一人ひとり違ってきます。
+    </p>
+    <p class="philosophy-text">
+      ゆがみが分かれば、日常生活の癖も見えてきます。頸椎を含む脊柱・骨盤などの関節を安全に整えたうえで、本来の快調なカラダを少しでも早く取り戻していただくために、不調の原因かもしれない自分の歩き方や日頃の癖などをあなたご自身が知って興味をもってもらえれば可能性はもっと拡がります。
+    </p>
+  </section>
+
+  <!-- 施術の特徴 -->
+  <section class="features">
+    <div class="section-label">FEATURES</div>
+    <h2 class="section-title">toretaの施術の特徴</h2>
+    <div class="feature-grid">
+      <div class="feature-card">
+        <div class="feature-icon">🦴</div>
+        <div class="feature-content">
+          <div class="feature-title">骨盤から整える</div>
+          <p class="feature-text">骨盤は家の土台と同じです。傾けばその上に積み木のように重なる背骨が崩れないようバランスをとるために首の骨まで歪み、さまざまな場所に影響します。骨盤という器が歪めば内臓も偏り、身体の痛みにとどまらず内科的疾患の遠因ともなり得ます。骨盤を整えることで男女を問わず、血流も良くなりホルモンのバランスがとれます。</p>
+        </div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🔍</div>
+        <div class="feature-content">
+          <div class="feature-title">ゆがみ検査で原因を特定</div>
+          <p class="feature-text">片付いた部屋は居心地がいい。引き出しに整理整頓するように身体を乱れのない調和のとれた状態にすること。整体では自分で整えられない歪みを修正し、痛みを早く癒すことができます。コンパスできれいな円を描くには中心がしっかりしていることが大切で、骨盤とは健康という円を描くために外せない中心なのです。</p>
+        </div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+            <rect x="5" y="4" width="30" height="6" rx="2" fill="white" opacity="0.9"/>
+            <rect x="5" y="12" width="30" height="6" rx="2" fill="white" opacity="0.9"/>
+            <rect x="5" y="20" width="30" height="6" rx="2" fill="white" opacity="0.9"/>
+            <rect x="5" y="28" width="30" height="6" rx="2" fill="white" opacity="0.9"/>
+            <line x1="20" y1="4" x2="20" y2="34" stroke="rgba(255,255,255,0.4)" stroke-width="2"/>
+          </svg>
+        </div>
+        <div class="feature-content">
+          <div class="feature-title">頚椎の安全な矯正</div>
+          <p class="feature-text">頚椎の矯正についてこわいイメージをお持ちの方も多いと思います。頚椎という積み木を真っすぐにするためには、まず土台（地面）である骨盤を整える必要があります。局所だけではなく積み木の土台部分から緩やかに、真っすぐ積み上げるように安全な施術で正常な位置へと整えます。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 対応症状 -->
+  <section class="symptoms">
+    <div class="section-label">SYMPTOMS</div>
+    <h2 class="section-title">こんな症状に対応しています</h2>
+    <div class="symptom-grid">
+      <div class="symptom-item"><div class="symptom-check">✓</div>顎関節症</div>
+      <div class="symptom-item"><div class="symptom-check">✓</div>頭痛・肩のこり</div>
+      <div class="symptom-item"><div class="symptom-check">✓</div>肩関節・背中・腕の痛み</div>
+      <div class="symptom-item"><div class="symptom-check">✓</div>めまい・吐き気・耳鳴り</div>
+      <div class="symptom-item"><div class="symptom-check">✓</div>腰痛・ぎっくり腰</div>
+      <div class="symptom-item"><div class="symptom-check">✓</div>坐骨神経痛・ヘルニア</div>
+      <div class="symptom-item"><div class="symptom-check">✓</div>膝の痛み・足のしびれ</div>
+      <div class="symptom-item"><div class="symptom-check">✓</div>産後の骨盤矯正</div>
+      <div class="symptom-item"><div class="symptom-check">✓</div>身体の歪み・姿勢改善</div>
+      <div class="symptom-item"><div class="symptom-check">✓</div>三叉神経痛</div>
+    </div>
+  </section>
+
+  <!-- 施術方針 -->
+  <section class="policy">
+    <div class="section-label">POLICY</div>
+    <h2 class="section-title">施術の3つの方針</h2>
+    <div class="policy-grid">
+      <div class="policy-card">
+        <div class="policy-num">01</div>
+        <div class="policy-title">引っ張らない</div>
+        <p class="policy-text">身体に無理な力を加えない、やさしい施術。ボキボキしません。</p>
+      </div>
+      <div class="policy-card">
+        <div class="policy-num">02</div>
+        <div class="policy-title">痛みを伴わない</div>
+        <p class="policy-text">施術中もリラックスできる、痛くない整体です。</p>
+      </div>
+      <div class="policy-card">
+        <div class="policy-num">03</div>
+        <div class="policy-title">長引かせない</div>
+        <p class="policy-text">根本原因にアプローチするから、再発しにくい身体をつくります。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div>
+      <h2 class="cta-title">まずは、お気軽に<br>ご相談ください。</h2>
+      <p class="cta-sub">長年の症状でお困りの方、どこに行っても良くならない方、解決の糸口を一緒に探しましょう。</p>
+    </div>
+    <div class="cta-right">
+      <div class="cta-tel">
+        <div class="cta-tel-label">TEL</div>
+        <div class="cta-tel-num">03-5848-8252</div>
+        <div class="cta-tel-hours">月〜金 10:00〜21:00　／　土・日 10:00〜18:00<br>祝日・GW・年末年始休診</div>
+      </div>
+      <a href="https://itami-toreta.jp/contact.html" class="cta-btn">メールでのお問い合わせ・ご予約</a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="footer-logo">toreta整体院<span>富士見台本院</span></div>
+  <p class="footer-copy">© toreta整体院 富士見台本院</p>
+</footer>
+
+</body>
+</html>
